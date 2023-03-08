@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+/*color palette
+
+Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst); */
+
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid crimson;
+
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.outer-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4845E4;
+    color: white;
+}
+
+.inner-nav-container {
+    width: 100%;
+}
+
+.inner-nav-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.inner-nav-container ul li {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+
+.inner-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 100px;
+
+
+}
+
+.header-bg-img {
+    width: 80px;
+    height: 50px;
+    background-image: url("./assets/squiggle_line_stripe.svg");
+}
+
+.inner-header-container h4 {
+    margin: 20px 0;
+}
+
+.inner-header-container p {
+    background-color: #ED4385;
+    padding: 10px 20px;
+    border-radius: 25px;
+
+}
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
