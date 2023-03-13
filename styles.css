@@ -31,7 +31,7 @@ Grijs #7A7A7A (voor de service-tegel tekst); */
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid crimson;
+    /*border: 1px solid crimson;*/
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 
@@ -51,7 +51,7 @@ p {
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
-/* --------------- 4.1 Header ------------------------- */
+/* --------------- 4.1 Header------------------------- */
 
 .outer-header-container {
     display: flex;
@@ -76,7 +76,7 @@ p {
     padding: 5px 10px;
 }
 
-
+/* --------------- 4.2 Introduction ------------------- */
 .inner-header-container {
     display: flex;
     flex-direction: column;
@@ -103,24 +103,87 @@ p {
     text-transform: uppercase;
 }
 
-main {
+/* --------------- 4.2 Section Hello ------------------- */
+.main {
     display: flex;
     flex-direction: column;
-    flex-basis: 0 0 ;
 }
+
 .hello {
     display: flex;
     flex-direction: column;
     color: #4845E4;
     align-items: center;
     text-align: center;
+    padding: 50px 30px;
 }
 
-.inner-hello-container {
-    flex: 0 0 80%;
+.hello * {
+    margin-top: 20px;
 }
 
+.hello p {
+    color: #0C0C0C;
+    padding: 30px 30px;
+    font-size: 12px;
+    font-weight: bold;
 
-/* --------------- 4.2 Introduction ------------------- */
+}
+/* --------------- 4.2 Section Work ------------------- */
+.work {
+    background-color: #F3F6F9;
+}
+.work img {
+    width: 100%;
+    box-shadow: 0 5px 5px lightgrey ;
+}
+
+.work article {
+    display: flex;
+    padding: 20px;
+}
+
+.work article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    padding: 0 20px;
+}
+
+.inner-work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.work-bg-img {
+    background-image: url("./assets/squiggle_line.svg");
+    width: 50px;
+    height: 6px;
+    color: #4845E4;
+}
+
+.inner-work-container a {
+    font-size: 10px;
+    font-weight: bold;
+    color: #4845E4;
+    text-decoration: none;
+}
+
+/*.outer-work-article {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    background-color: green;*/
+/*}*/
+
+
+
+/*.outer-work-article:nth-child(2) {*/
+/*    flex-direction: row-reverse;*/
+/*    background-color: blue;*/
+/*}*/
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
