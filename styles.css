@@ -129,7 +129,7 @@ p {
     font-weight: bold;
 
 }
-/* --------------- 4.2 Section Work ------------------- */
+/* --------------- 4.3 Section Work ------------------- */
 .work {
     background-color: #F3F6F9;
 }
@@ -172,18 +172,88 @@ p {
     color: #4845E4;
     text-decoration: none;
 }
+/* --------------- 4.4 Section Services ------------------- */
 
-/*.outer-work-article {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    background-color: green;*/
-/*}*/
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.services article {
+    flex: 1 1 30%;
+    padding: 20px;
+    border: 1px solid #5722CD;
+    margin: 10px;
+    box-shadow: 5px 3px 5px lightgrey;
+}
+.serv-bg-img {
+    width: 50px;
+    height: 40px;
+    color: #5722CD;
+    margin: 10px;
+}
+.services h4 {
+    margin: 10px;
+    color: #5722CD;
+}
+.services p {
+    color: #7A7A7A;
+}
+#serv-img-1 {
+    background-image: url("./assets/icon_web-design.svg");
+}#serv-img-2 {
+    background-image: url("./assets/icon_web-development.svg");
+}#serv-img-3 {
+    background-image: url("./assets/icon_ux.svg");
+}#serv-img-4 {
+    background-image: url("./assets/icon_graphic-design.svg");
+}#serv-img-5 {
+    background-image: url("./assets/icon_seo.svg");
+}#serv-img-6 {
+    background-image: url("./assets/icon_copywriting.svg");
+}
+/* --------------- 4.5 Section Contact ------------------- */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4845E4;
+    padding: 50px 20px;
+
+
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*background-color: #4845E4;*/
+    /*color: white;*/
+    /*padding: 0 20px;*/
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: white;
+
+}
+
+.form-header p {
+    margin: 10px 0;
+}
+
+.form-name, .form-email, .form-message, .form-button {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    color: white;
+    font-size: 10px;
+
+}
 
 
 
-/*.outer-work-article:nth-child(2) {*/
-/*    flex-direction: row-reverse;*/
-/*    background-color: blue;*/
-/*}*/
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
