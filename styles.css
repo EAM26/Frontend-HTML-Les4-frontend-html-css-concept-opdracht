@@ -32,12 +32,15 @@ Grijs #7A7A7A (voor de service-tegel tekst); */
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     border: 1px solid crimson;
-
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 10px;
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -51,7 +54,6 @@ h1, h2, h3, h4, h5 {
 /* --------------- 4.1 Header ------------------------- */
 
 .outer-header-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,8 +83,6 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     text-align: center;
     padding: 80px 100px;
-
-
 }
 
 .header-bg-img {
@@ -99,8 +99,28 @@ h1, h2, h3, h4, h5 {
     background-color: #ED4385;
     padding: 10px 20px;
     border-radius: 25px;
-
+    box-shadow: 5px 3px 20px black;
+    text-transform: uppercase;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0 0 ;
+}
+.hello {
+    display: flex;
+    flex-direction: column;
+    color: #4845E4;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-hello-container {
+    flex: 0 0 80%;
+}
+
+
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
